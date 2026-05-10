@@ -2,12 +2,17 @@
  
 Automatically regenerates missing Steam `appmanifest_XXXX.acf` files by scanning your filesystem for installed game folders and looking up their App IDs via the Steam Store API.
  
-No browser automation, no dependencies — Python 3.
+No browser, no dependencies, no — Python 3.
  ---  
   
 # Installl + run
 ```bash
 git clone https://github.com/Steinperfer/steam-.acf-generator-.git && cd steam-.acf-generator- && python3 acf-generator.py
+```
+# Alternative
+ Download the Zip/Extract the Zip/Go in the Folder
+```bash
+python3 acf-generator.py
 ```
   
 <img width="872" height="798" alt="steam13" src="https://github.com/user-attachments/assets/e8e76aaf-d61e-4e60-8ff3-0ff7f70f1317" />
