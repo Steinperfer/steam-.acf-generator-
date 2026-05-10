@@ -2,7 +2,7 @@
  
 Automatically regenerates missing Steam `appmanifest_XXXX.acf` files by scanning your filesystem for installed game folders and looking up their App IDs via the Steam Store API.
  
-No browser, no dependencies, no — Python 3.
+No browser, no dependencies, auto path detection — Python 3.
  ---  
   
 # Installl + run
