@@ -27,9 +27,7 @@ python3 steam_acf_generator.py /mnt/games /home/user
 ```
    
 ### Fix a single game manually
- 
- <img width="717" height="658" alt="steam54" src="https://github.com/user-attachments/assets/167d92ef-c072-4d63-9e20-c3b6ecaac6ac" />
-   
+    
 Use this for games the script couldn't find automatically:
 ```bash
 python3 steam_acf_generator.py --manual /path/to/steamapps 12345 FolderName
@@ -47,7 +45,8 @@ python3 steam_acf_generator.py --manual /4BTRFS/SteamLibrary/steamapps 570 Dota2
 ---
  
 ## Match rate
- 
+  <img width="717" height="658" alt="steam54" src="https://github.com/user-attachments/assets/167d92ef-c072-4d63-9e20-c3b6ecaac6ac" />
+  
 In testing across ~160 installed games, the script matched approximately **85–90%** automatically. The remaining ~10–15% fall into categories that are difficult or impossible to resolve automatically:
  
 | Category | Examples | Fixable? |
