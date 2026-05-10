@@ -6,7 +6,22 @@ No browser automation, no dependencies — Python 3.
 <img width="872" height="798" alt="steam13" src="https://github.com/user-attachments/assets/e8e76aaf-d61e-4e60-8ff3-0ff7f70f1317" />
 <img width="717" height="658" alt="steam54" src="https://github.com/user-attachments/assets/167d92ef-c072-4d63-9e20-c3b6ecaac6ac" />
 ---
+
+### Automatic scan (recommended)
  
+```bash
+python3 steam_acf_generator.py
+```
+  
+Scans common mount points: `/home`, `/mnt`, `/media`, `/run/media`, and root-level drives.
+ 
+### Specify a path directly (faster)
+ 
+```bash
+python3 steam_acf_generator.py /4BTRFS
+python3 steam_acf_generator.py /mnt/games /home/user
+```
+  
 ## Why does this exist?
  
 Steam tracks installed games through `.acf` files inside `steamapps/`. If these files get deleted, corrupted, or lost (e.g. after moving a library to a new drive), Steam no longer recognizes the games as installed — even though all the game data is still there. Normally you'd have to re-download everything. This tool fixes that.
@@ -28,23 +43,6 @@ Steam tracks installed games through `.acf` files inside `steamapps/`. If these 
 - Internet connection (for the Steam Store API)
 - No third-party packages needed
 ---
- 
-## Usage
- 
-### Automatic scan (recommended)
- 
-```bash
-python3 steam_acf_generator.py
-```
- 
-Scans common mount points: `/home`, `/mnt`, `/media`, `/run/media`, and root-level drives.
- 
-### Specify a path directly (faster)
- 
-```bash
-python3 steam_acf_generator.py /4BTRFS
-python3 steam_acf_generator.py /mnt/games /home/user
-```
  
 ### Fix a single game manually
  
