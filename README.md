@@ -28,9 +28,9 @@ python3 steam_acf_generator.py /mnt/games /home/user
    
 ### Fix a single game manually
  
-Use this for games the script couldn't find automatically:
  <img width="717" height="658" alt="steam54" src="https://github.com/user-attachments/assets/167d92ef-c072-4d63-9e20-c3b6ecaac6ac" />
-
+   
+Use this for games the script couldn't find automatically:
 ```bash
 python3 steam_acf_generator.py --manual /path/to/steamapps 12345 FolderName
 ```
