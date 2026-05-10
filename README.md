@@ -25,29 +25,7 @@ Scans common mount points: `/home`, `/mnt`, `/media`, `/run/media`, and root-lev
 python3 steam_acf_generator.py /4BTRFS
 python3 steam_acf_generator.py /mnt/games /home/user
 ```
-  
-## Why does this exist?
- 
-Steam tracks installed games through `.acf` files inside `steamapps/`. If these files get deleted, corrupted, or lost (e.g. after moving a library to a new drive), Steam no longer recognizes the games as installed — even though all the game data is still there. Normally you'd have to re-download everything. This tool fixes that.
- 
----
- 
-## How it works
- 
-1. **Scans** your entire filesystem (or a path you specify) for `steamapps/common/` folders
-2. **Reads** every subfolder inside `common/` — each one is an installed game
-3. **Queries** the Steam Store API with the folder name to find the correct App ID
-4. **Writes** a proper `appmanifest_XXXX.acf` file into the `steamapps/` directory
-5. **Skips** games that already have a valid ACF file
----
- 
-## Requirements
- 
-- Python 3.10 or newer
-- Internet connection (for the Steam Store API)
-- No third-party packages needed
----
- 
+   
 ### Fix a single game manually
  
 Use this for games the script couldn't find automatically:
@@ -81,3 +59,25 @@ In testing across ~160 installed games, the script matched approximately **85–
 | CamelCase + suffix combos | `BorderlandsGOTYEnhanced`, `BorderlandsPreSequel` | ⚠️ Use `--manual` |
  
 For everything the script can't resolve, a list is saved to `/tmp/steam_manual_lookup.txt` with instructions.
+  
+## Why does this exist?
+ 
+Steam tracks installed games through `.acf` files inside `steamapps/`. If these files get deleted, corrupted, or lost (e.g. after moving a library to a new drive), Steam no longer recognizes the games as installed — even though all the game data is still there. Normally you'd have to re-download everything. This tool fixes that.
+ 
+---
+ 
+## How it works
+ 
+1. **Scans** your entire filesystem (or a path you specify) for `steamapps/common/` folders
+2. **Reads** every subfolder inside `common/` — each one is an installed game
+3. **Queries** the Steam Store API with the folder name to find the correct App ID
+4. **Writes** a proper `appmanifest_XXXX.acf` file into the `steamapps/` directory
+5. **Skips** games that already have a valid ACF file
+---
+ 
+## Requirements
+ 
+- Python 3.10 or newer
+- Internet connection (for the Steam Store API)
+- No third-party packages needed
+---
