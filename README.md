@@ -10,9 +10,10 @@ No browser automation, no dependencies — Python 3.
   
 # Usage
 ### Automatic scan (recommended)
- 
+
+Just start the script anywhere
 ```bash
-python3 steam_acf_generator.py
+python3 acf_generator.py
 ```
   
 Scans common mount points: `/home`, `/mnt`, `/media`, `/run/media`, and root-level drives.
