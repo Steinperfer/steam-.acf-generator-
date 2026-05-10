@@ -4,13 +4,12 @@ Automatically regenerates missing Steam `appmanifest_XXXX.acf` files by scanning
  
 No browser automation, no dependencies — Python 3.
  ---  
-# Usage
-### Automatic scan (recommended)
-
-Just start the script anywhere
+  
+# Installl + run
 ```bash
-python3 acf_generator.py
+git clone https://github.com/Steinperfer/steam-.acf-generator-.git && cd steam-.acf-generator- && python3 acf-generator.py
 ```
+  
 <img width="872" height="798" alt="steam13" src="https://github.com/user-attachments/assets/e8e76aaf-d61e-4e60-8ff3-0ff7f70f1317" />
   
 Scans common mount points: `/home`, `/mnt`, `/media`, `/run/media`, and root-level drives.
