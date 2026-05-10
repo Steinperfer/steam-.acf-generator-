@@ -19,7 +19,7 @@ python3 acf-generator.py
   
 Scans common mount points: `/home`, `/mnt`, `/media`, `/run/media`, and root-level drives.
  
-### Specify a path directly (faster)
+### Specify a path directly
  
 ```bash
 python3 steam_acf_generator.py /4BTRFS
