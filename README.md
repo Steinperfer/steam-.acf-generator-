@@ -3,11 +3,7 @@
 Automatically regenerates missing Steam `appmanifest_XXXX.acf` files by scanning your filesystem for installed game folders and looking up their App IDs via the Steam Store API.
  
 No browser automation, no dependencies — Python 3.
-  
-<img width="872" height="798" alt="steam13" src="https://github.com/user-attachments/assets/e8e76aaf-d61e-4e60-8ff3-0ff7f70f1317" />
-<img width="717" height="658" alt="steam54" src="https://github.com/user-attachments/assets/167d92ef-c072-4d63-9e20-c3b6ecaac6ac" />
----
-  
+ ---  
 # Usage
 ### Automatic scan (recommended)
 
@@ -15,6 +11,7 @@ Just start the script anywhere
 ```bash
 python3 acf_generator.py
 ```
+<img width="872" height="798" alt="steam13" src="https://github.com/user-attachments/assets/e8e76aaf-d61e-4e60-8ff3-0ff7f70f1317" />
   
 Scans common mount points: `/home`, `/mnt`, `/media`, `/run/media`, and root-level drives.
  
@@ -50,7 +47,8 @@ Steam tracks installed games through `.acf` files inside `steamapps/`. If these 
 ### Fix a single game manually
  
 Use this for games the script couldn't find automatically:
- 
+ <img width="717" height="658" alt="steam54" src="https://github.com/user-attachments/assets/167d92ef-c072-4d63-9e20-c3b6ecaac6ac" />
+
 ```bash
 python3 steam_acf_generator.py --manual /path/to/steamapps 12345 FolderName
 ```
