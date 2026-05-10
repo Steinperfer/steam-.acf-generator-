@@ -1,4 +1,4 @@
-# Steam ACF Generator
+# Steam ACF/appmanifest Generator
  
 Automatically regenerates missing Steam `appmanifest_XXXX.acf` files by scanning your filesystem for installed game folders and looking up their App IDs via the Steam Store API.
  
