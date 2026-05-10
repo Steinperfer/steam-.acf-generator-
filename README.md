@@ -8,7 +8,7 @@ No browser automation, no dependencies — Python 3.
 <img width="717" height="658" alt="steam54" src="https://github.com/user-attachments/assets/167d92ef-c072-4d63-9e20-c3b6ecaac6ac" />
 ---
   
-#Usage
+# Usage
 ### Automatic scan (recommended)
  
 ```bash
